@@ -1,3 +1,3 @@
-markdown:redcarpet
-baseurl:/Learningjekyll
-exclude:['README.md']
+markdown: kramdown
+baseurl: /Learningjekyll
+exclude: ['README.md']
