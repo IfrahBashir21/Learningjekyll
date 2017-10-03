@@ -4,10 +4,10 @@
 
 ---
 
-<h1>News about Jekyll</h1>
+<h1>Sub category</h1>
 
 <ul>
-	{% for news in site.categories.news %}
+	{% for news in site.categories.subcategory %}
 		<li>
 			<a href="{{site.baseurl}}{{news.url}}">{{ news.title }}</a>
 			<p> {{ news.meta }}</p>

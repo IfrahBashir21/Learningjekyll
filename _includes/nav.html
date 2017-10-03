@@ -1,0 +1,7 @@
+  	<nav>
+   		<ul class="nav {{ include.navclass }}">
+   			<li><a href="{{site.baseurl}}/index.html" title="Index" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+   			<li><a href="{{site.baseurl}}/syntax.html" title="Jekyll Syntax" class="{% if page.url == '/syntax.html'%}current{% endif %}">Jekyll Syntax</a></li>
+   			<li><a href="{{site.baseurl}}/news.html" title="News" class="{% if page.url contains 'news' or page.url contains 'subcategory' %}current{% endif %}">News</a></li>
+   		</ul>
+   	</nav>

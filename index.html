@@ -6,4 +6,12 @@
    <h1>Learning Jekyll</h1>
    <p>This is jekyll site</p>
     
-
+   <h1>Displays sub categories here</h1>
+   <ul>
+	{% for news in site.categories.subcategory limit:1 %}
+		<li>
+			<a href="{{site.baseurl}}{{news.url}}">{{ news.title }}</a>
+			<p> {{ news.meta }}</p>
+		</li>
+	{% endfor %}
+</ul>
